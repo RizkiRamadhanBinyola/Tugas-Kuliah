@@ -14,28 +14,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dnQHMj5dwpScr6hA6iqq-3" value="&lt;font style=&quot;color: rgb(204, 153, 255);&quot;&gt;Input &lt;/font&gt;Rupiah" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="180" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="162" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dnQHMj5dwpScr6hA6iqq-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dnQHMj5dwpScr6hA6iqq-5" target="dnQHMj5dwpScr6hA6iqq-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dnQHMj5dwpScr6hA6iqq-5" value="&lt;span style=&quot;font-size: 11pt; line-height: 115%; font-family: Calibri, sans-serif;&quot; lang=&quot;EN-GB&quot;&gt;1 USD = 16.590 Rupiah&lt;/span&gt;&lt;span style=&quot;font-size:11.0pt;line-height:115%;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;&lt;br/&gt;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:&lt;br/&gt;minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;&lt;br/&gt;mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA&quot; lang=&quot;EN-GB&quot;&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="320" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="252" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="dnQHMj5dwpScr6hA6iqq-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dnQHMj5dwpScr6hA6iqq-7" target="dnQHMj5dwpScr6hA6iqq-9">
+        <mxCell id="FKO9adYRItbFNvUQNCcp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dnQHMj5dwpScr6hA6iqq-7" target="FKO9adYRItbFNvUQNCcp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dnQHMj5dwpScr6hA6iqq-7" value="Dollar = Rupiah / Kurs" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="460" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="dnQHMj5dwpScr6hA6iqq-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dnQHMj5dwpScr6hA6iqq-9" target="dnQHMj5dwpScr6hA6iqq-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dnQHMj5dwpScr6hA6iqq-9" value="Print Dollar" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="600" width="120" height="60" as="geometry" />
+          <mxGeometry x="350" y="352" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dnQHMj5dwpScr6hA6iqq-16" value="Selesai" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="710" width="120" height="80" as="geometry" />
+          <mxGeometry x="350" y="532" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FKO9adYRItbFNvUQNCcp-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKO9adYRItbFNvUQNCcp-1" target="dnQHMj5dwpScr6hA6iqq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKO9adYRItbFNvUQNCcp-1" value="Print Dollar" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="442" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
