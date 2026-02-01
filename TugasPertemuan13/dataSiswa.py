@@ -1,6 +1,8 @@
+# List kosong untuk menyimpan data siswa (nama dan nilai)
 daftar_siswa = []
 
-while True :
+while True:
+    # Menu utama
     print("\n==== APLIKASI DAFTAR NILAI SEDERHANA ====")
     print("1. Tambah Data Mahasiswa")
     print("2. Tampilkan seluruh data")
@@ -8,55 +10,80 @@ while True :
     print("4. Cari data siswa berdasarkan nama")
     print("5. Keluar Program")
 
-    pilihan = input("Pilih menu (1 - 5) : ")
+    # Input pilihan menu
+    pilihan = input("Pilih menu (1 - 5): ")
 
-    if pilihan == "1" :
-        nama = input ("Masukan nama siswa : " ).strip()
-        nilai = float(input("Masukan nilai siswa : "))
-        daftar_siswa.append ([nama, nilai])
-        print("Data Berhasil ditambahkan")
+    if pilihan == "1":
+        # Input nama siswa dan hapus spasi 
+        nama = input("Masukkan nama siswa: ").strip()
 
-    elif pilihan == "2" :
-        if len(daftar_siswa) == 0 :
+        # Input nilai siswa 
+        nilai = float(input("Masukkan nilai siswa: "))
+
+        # Menambahkan data ke dalam list
+        daftar_siswa.append([nama, nilai])
+
+        print("Data berhasil ditambahkan.")
+
+    elif pilihan == "2":
+        if not daftar_siswa:
             print("Belum ada data siswa.")
-        else :
+        else:
             print("\nDAFTAR NILAI SISWA")
-            for i , siswa in enumerate(daftar_siswa) :
-                print(f"{i + 1}. {siswa[0]} - {siswa[1]}")
+            # Menampilkan data menggunakan enumerate
+            for i, siswa in enumerate(daftar_siswa, start=1):
+                print(f"{i}. {siswa[0]} - {siswa[1]}")
 
-    elif pilihan == "3" :
-        if len(daftar_siswa) == 0 :
+
+    elif pilihan == "3":
+        # Cek apakah data tersedia
+        if not daftar_siswa:
             print("Belum ada data untuk dihitung.")
-        else : 
-            nilai_semua = [s[1] for s in daftar_siswa]
-            rata = sum(nilai_semua) / len(nilai_semua)
-            maksimum = max(nilai_semua)
-            minimum = min(nilai_semua)
+        else:
+            # Mengambil semua nilai siswa
+            nilai_siswa = [siswa[1] for siswa in daftar_siswa]
 
-            print("STATISTIK NILAI")
-            print("Rata Rata : ", rata)
-            print("Nilai Tertinggi : ", maksimum)
-            print("Nilai Terendah : ", minimum)
+            # Menghitung statistik
+            rata_rata = sum(nilai_siswa) / len(nilai_siswa)
+            nilai_max = max(nilai_siswa)
+            nilai_min = min(nilai_siswa)
 
-    elif pilihan == 4 : 
-        cari = input("Masukan nama yang dicari : ").strip().lower()
+            # Menampilkan hasil statistik
+            print("\nSTATISTIK NILAI")
+            print("Rata-rata       :", rata_rata)
+            print("Nilai tertinggi :", nilai_max)
+            print("Nilai terendah  :", nilai_min)
+
+
+    elif pilihan == "4":
+        # Input nama yang dicari
+        cari = input("Masukkan nama yang dicari: ").strip().lower()
+
+        # Variabel penanda data ditemukan
         ditemukan = False
 
-        for siswa in daftar_siswa :
-            if siswa[0].lower() == cari :
-                print("Data ditemukan :", siswa[0], "-", siswa[1])
+        # Pencarian data siswa
+        for nama, nilai in daftar_siswa:
+            if nama.lower() == cari:
+                print(f"Data ditemukan: {nama} - {nilai}")
                 ditemukan = True
+                break
 
-        if not ditemukan :
+        # Jika data tidak ditemukan
+        if not ditemukan:
             print("Data siswa tidak ditemukan!")
 
-    elif pilihan == 5 : 
-        print("Terimakasih, Program Selesai")
-        break
-    else : 
-        print("Pilihan tidak valid , Silahkan ulangi.")
 
-    ulang = input("\nIngin kembali ke menu utama? (y/t : )").lower()
-    if ulang != "y" :
-        print("Program berakhir. Terimakasih.")
+    elif pilihan == "5":
+        print("Terima kasih, program selesai.")
+        break
+
+
+    else:
+        print("Pilihan tidak valid, silakan ulangi.")
+
+
+    ulang = input("\nKembali ke menu utama? (y/t): ").lower()
+    if ulang != "y":
+        print("Program berakhir. Terima kasih.")
         break
